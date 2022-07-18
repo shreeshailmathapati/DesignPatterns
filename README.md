@@ -20,4 +20,3 @@ class Checker
 
 1. Method batteryIsOk is handling 3 different types of scenarios or responsibilities temperature range, soc and chargeRate
 2. Not handling when parameters is null
-3. 
