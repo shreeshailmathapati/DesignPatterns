@@ -31,7 +31,7 @@ class Checker
     bool batteryIsOk(float temperature, float soc, float chargeRate) {
     bool isTemperatureValid = new isTemperatureOk(temperature);
     bool isSocValid         = new isSocOk(soc);
-    bool ischargeRateValid  = new ischargeRateOk(chargeRate);   
+    bool ischargeRateValid  = new isChargeRateOk(chargeRate);   
     }
      
     // Method to check temperature range
@@ -55,7 +55,7 @@ class Checker
     }
     
     // Method to check Charge Rate
-    bool ischargeRateOk(float chargeRate)
+    bool isChargeRateOk(float chargeRate)
     {
         if(soc < 20 || soc > 80) {
            printMessage("State of Charge is out of range!");
