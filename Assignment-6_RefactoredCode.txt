@@ -1,0 +1,29 @@
+Refactored Code:
+
+public class ConcreteCalculator : ICalculator
+{
+    public int Add(int x, int y)
+    {
+	printer.PrintLog("Add",x,y);
+        var addition = x + y;
+	printer.PrintLog("Addition result",addition);
+        return addition;
+    }
+}
+
+public class ConsoleLogPrinter : ILogPrinter
+{
+    public int PrintLog(string message, list<T> values)
+    {
+	Console.WriteLine("Printer message on console"+message);
+    }	
+}
+
+public class FileLogPrinter : ILogPrinter
+{
+    public int PrintLog(string message, list<T> values)
+    {
+	Console.WriteLine("Printer message on File"+message);
+    }
+	
+}
